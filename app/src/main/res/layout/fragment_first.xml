@@ -9,25 +9,27 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="408dp"
-        android:layout_height="798dp"
+        android:layout_width="401dp"
+        android:layout_height="793dp"
         android:background="@color/screenBackground"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_conversion_absoluteHeight="138dp"
         tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteY="-13dp">
+        tools:layout_editor_absoluteY="4dp">
 
         <Button
             android:id="@+id/button_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="200dp"
             android:text="@string/next"
-            app:layout_constraintBottom_toTopOf="@id/textview_first"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first"
+            app:layout_constraintVertical_bias="1.0"
             tools:layout_conversion_absoluteHeight="48dp"
             tools:layout_conversion_absoluteWidth="88dp" />
 
@@ -43,9 +45,8 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_first"
+            app:layout_constraintTop_toTopOf="parent"
             tools:layout_conversion_absoluteHeight="42dp"
             tools:layout_conversion_absoluteWidth="163dp" />
 
@@ -53,8 +54,12 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="622dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="546dp"
+            android:layout_marginBottom="200dp"
+            android:text="@string/toast_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

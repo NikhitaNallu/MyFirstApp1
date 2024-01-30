@@ -10,4 +10,5 @@
     <string name="lorem_ipsum">
         Hello World!
     </string>
+    <string name="toast_button_text">Toast</string>
 </resources>
